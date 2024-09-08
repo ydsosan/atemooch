@@ -44,7 +44,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5>V Jornada de Tecnología Médica en Oftalmología y Optometría de Chile 2025</h5>
                             <p>¡Inscripciones abiertas!</p>
-                            <button>Inscríbete</button>
+                            <button class="boton">Inscríbete</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -52,7 +52,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Día del Tecnólogo Médico 2024</h5>
                             <p>Celebraremos el día del tecnólogo este 2 de Octubre</p>
-                            <button>Más información</button>
+                            <button class="boton">Más información</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -60,7 +60,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Concurso fotografía médica oftalmológica</h5>
                             <p>¡Participa en el día del tecnólogo médico!</p>
-                            <button>Más información</button>
+                            <button class="boton">Más información</button>
                         </div>
                     </div>
                 </div>
@@ -105,23 +105,32 @@
         <div class="noticias">
             <h2>Últimas noticias</h2>
             <div class="container">
-                <div class="card">
-                    <img src="./assets/imgs/entrevista1.png" alt="">
-                    <h4>Tecnólogos al Micrófono</h4>
-                    <button>Leer más</button>
+                <div class="card"><a href="">
+                        <img src="./assets/imgs/jornada.png" alt="">
+                        <h4>V Jornada de Actualización e Innovación 2025</h4>
+                    </a>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><small>Sept 2024</small></li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <img src="./assets/imgs/entrevista1.png" alt="">
-                    <h4>Tecnólogos al Micrófono</h4>
-                    <button>Leer más</button>
+                <div class="card"><a href="">
+                        <img src="./assets/imgs/horaconeldoctor.png" alt="">
+                        <h4>Declaración de ATEMOOCH por programa del Dr. Ugarte</h4>
+                    </a>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><small>Sept 2024</small></li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <img src="./assets/imgs/entrevista1.png" alt="">
-                    <h4>Tecnólogos al Micrófono</h4>
-                    <button>Leer más</button>
+                <div class="card"><a href="">
+                        <img src="./assets/imgs/dia_tm.jpg" alt="">
+                        <h4>Día del tecnólogo médico 2 de octubre</h4>
+                    </a>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><small>Oct 2024</small></li>
+                    </ul>
                 </div>
             </div>
-            <button>Leer más</button>
+            <button class="boton">Más noticias</button>
         </div>
         <div class="mensaje">
             <div class="texto">
@@ -151,7 +160,7 @@
                                     <p>Hora: 20:30 hrs</p>
                                     <p>Formato: Zoom</p>
                                 </div>
-                                <button>Registrarse</button>
+                                <button class="boton">Registrarse</button>
                             </div>
                         </div>
                     </div>
@@ -171,7 +180,7 @@
                                     <p>Hora: 20:30 hrs</p>
                                     <p>Formato: Zoom</p>
                                 </div>
-                                <div><button>Registrarse</button></div>
+                                <div><button class="boton">Registrarse</button></div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -191,26 +200,102 @@
                                         <p>Formato: Presencial</p>
                                         <p>Lugar por definir</p>
                                     </div>
-                                    <button>Registrarse</button>
+                                    <button class="boton">Registrarse</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="boton_evento"><button>Ver más</button>
+                <div class="boton_evento"><button class="boton">Ver más</button>
                 </div>
             </div>
         </div>
 
         <div class="unete">
             <div class="cuadro_unete">
-                <h2>Únete</h2>
-                <h3>Forma parte de ATEMOOCH</h3>
-                <div class="boton_unirse"><button>Unirse</button></div>
+                <h2>Academia ATEMOOCH</h2>
+                <h3>Revisa los cursos que tenemos para tí</h3>
+                <div class="boton_unirse"><button class="boton">Academia</button></div>
             </div>
             <img class="unidos" src="./assets/imgs/socios.jpg" alt="">
         </div>
+
+        <div class="contacto">
+            <div class="correo">
+                <h4>Somos ATEMOOCH</h4>
+                <p>Una organización sin fines de lucro <strong>inscripcionesatemooch@gmail.com</strong></p>
+            </div>
+            <div class="formulario">
+                <h4>Contáctanos</h4>
+                <form action="" class="form">
+                    <div class="inputcontainer">
+                        <label for="">Nombre</label>
+                        <input type="text" class="input" placeholder="Nombre">
+                        <label for="">Apellidos</label>
+                        <input type="text" class="input" placeholder="Apellidos">
+                        <label for="">Correo</label>
+                        <input type="text" class="input" placeholder="Correo">
+                        <label for="">Mensaje</label>
+                        <textarea name="comentario" id="comentario" rows="3" cols="25"></textarea>
+                        <div class="botonform"><button class="boton">Enviar</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="links">
+                <h4>Enlaces rápidos</h4>
+                <ul class="lista">
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Academia ATEMOOCH</a></li>
+                    <li><a href="#">Házte Socio</a></li>
+                </ul>
+            </div>
+        </div>
     </main>
+
+    <section>
+        <div class="sponsor">
+            <h3>Colaboradores</h3>
+        </div>
+        <div class="scroller" data-direction="right" data-speed="slow">
+            <div class="scroller__inner">
+                <img src="./assets/imgs/alcon.jpg" alt="alcon">
+                <img src="./assets/imgs/amedoph.png" alt="amedoph">
+                <img src="./assets/imgs/arquimed.jpg" alt="arquimed">
+                <img src="./assets/imgs/ATM.png" alt="ATM">
+                <img src="./assets/imgs/DIOPTIC.png" alt="dioptic">
+                <img src="./assets/imgs/ivens.png" alt="ivens">
+                <img src="./assets/imgs/megalabs.png" alt="megalabs">
+                <img src="./assets/imgs/oftomed.png" alt="oftomed">
+                <img src="./assets/imgs/ophtha.png" alt="ophtha">
+                <img src="./assets/imgs/qualitek.png" alt="qualitek">
+                <img src="./assets/imgs/thea.png" alt="thea">
+                <img src="./assets/imgs/zonular.png" alt="zonular">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="textpie">
+            <a href="https://github.com/ydsosan">
+                <p>Diseñado por Yasnii</p>
+            </a>
+        </div>
+        <div class="pie">
+            <div class="linkedin"><a
+                    href="https://www.linkedin.com/company/atemooch-a-g-asociaci%C3%B3n-de-tecn%C3%B3logos-m%C3%A9dicos-en-oftalmolog%C3%ADa-y-optometr%C3%ADa-de-chile"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <p><strong>LinkedIn</strong></p>
+            </div>
+            <div class="linkedin"><a href="https://www.instagram.com/atemooch_" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <p><strong>@atemooch_</strong></p>
+            </div>
+        </div>
+
+    </footer>
 
 
     <script src="./assets/js/main.js"></script>

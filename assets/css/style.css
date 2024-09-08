@@ -26,6 +26,18 @@ h5 {
     font-size: 30px !important;
 }
 
+.boton {
+    background-color: rgb(82, 32, 32);
+    transition: background-color 0.3s;
+    padding: 0.5rem;
+    border-radius: 4px !important;
+    color: #fff;
+}
+
+.boton:hover {
+    background-color: rgb(212, 106, 106);
+    color: #000000;
+}
 /*HEADER*/
 header {
     display: flex;
@@ -55,7 +67,7 @@ header {
 }
 
 .nav-list a:hover {
-    color: rgb(82, 32, 32);
+    color: rgb(212, 106, 106);
 }
 
 .abrir,
@@ -64,7 +76,7 @@ header {
 }
 
 .abrir:hover {
-    color: rgb(82, 32, 32);
+    color: rgb(212,106,106);
 }
 
 .cerrar:hover {
@@ -94,13 +106,13 @@ main {
 }
 
 .cards {
-    background-color: rgb(151, 132, 132);
+    background-color: rgb(82, 32, 32, 0.4);
     text-align: center;
     transition: background-color 0.8s;
 }
 
 .cards:hover {
-    background-color: rgb(82, 32, 32);
+    background-color: rgb(102,153,153);
 }
 
 .card-link {
@@ -119,6 +131,18 @@ main {
 
 .cards i {
     font-size: 40px;
+}
+
+.boton-card {
+    background-color: rgb(82,32,32, 0.4);
+    transition: background-color 0.8s;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.boton-card:hover {
+    background-color: rgb(102,153,153);
+    color: #fff;
 }
 
 /*CARDS*/
@@ -140,18 +164,37 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    
+}
+
+.card a {
+    text-decoration: none;
 }
 
 .card img {
-    max-width: 100%;
-    padding-bottom: 2rem;
+    width: 100%;
+    max-height: 400px;
+        min-height: 400px;
+        object-fit: cover;
 }
 
+.card h4 {
+    color: black;
+    transition: color 0.8s;
+    padding: 2rem;
+}
+.card h4:hover {
+    color: rgb(212,106,106);
+}
+
+.list-group-item {
+    text-align: end !important;
+}
 /*NOTICIAS*/
 
 /*mensaje*/
 .mensaje {
-    background-color: rgb(82, 32, 32);
+    background-color: rgb(102, 153, 153);
     color: white;
     text-align: center;
     padding: 2rem;
@@ -177,9 +220,9 @@ main {
 
 .accordion-item {
     --bs-accordion-btn-color: black;
-    --bs-accordion-btn-bg: rgb(82, 32, 32, 0.4);
-    --bs-accordion-active-color: rgb(255, 255, 255);
-    --bs-accordion-active-bg: rgb(82, 32, 32);
+    --bs-accordion-btn-bg: rgb(82,32,32, 0.4);
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: rgb(82,32,32);
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
@@ -218,7 +261,7 @@ main {
 }
 .cuadro_unete {
     width: 100%;
-    background-color: rgb(82, 32, 32); ;
+    background-color: rgb(82, 32, 32, 0.4); ;
     padding: 2rem;
     align-items: center;
     text-align: center;
@@ -228,6 +271,149 @@ main {
 
 .boton_unirse {
     padding-top: 2rem;
+}
+
+/*CONTACTO*/
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 5rem;
+    padding: 5rem;
+
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+
+}
+.lista {
+    list-style: none;
+}
+
+.lista a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista a:hover {
+    color: rgb(82, 32, 32);
+}
+.input,
+#comentario {
+    border: solid 2px rgb(187, 187, 187);
+        font-family: "Roboto", sans-serif !important;
+            font-weight: 100 !important;
+            font-style: normal !important;
+}
+
+.botonform {
+    padding: 1rem;
+    align-items: end;
+}
+
+/*COLABORADORES*/
+.sponsor {
+    padding: 1rem;
+}
+.scroller img {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 1rem;
+}
+.scroller {
+    max-width: 100%;
+
+}
+.scroller_inner {
+padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 30s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(82, 32, 32, 0.4);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.textpie {
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.pie {
+    display: flex;
+    justify-content: right;
+}
+
+.textpie p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.linkedin {
+    display: flex;
+    padding: 10px;
+}
+
+.linkedin i {
+    font-size: 40px;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.linkedin p {
+    padding-top: 5px;
+    color: #fff;
+}
+
+.textpie a {
+    text-decoration: none;
 }
 
 @media (max-width: 576px) {
@@ -294,7 +480,7 @@ main {
     }
 
     .mensaje {
-        background-color: rgb(82, 32, 32);
+        background-color: rgb(102,153,153);
         color: white;
         text-align: center;
         padding: 2rem;
@@ -342,10 +528,19 @@ main {
 
 .cuadro_unete {
     width: 100%;
-    background-color: rgb(82, 32, 32);
+    background-color: rgb(82, 32, 32, 0.4);
     padding: 5rem;
     align-items: center;
     text-align: center;
     flex-wrap: nowrap;
+}
+
+.contacto {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 5rem;
+    padding: 5rem;
+
 }
 }
